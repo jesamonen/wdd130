@@ -1,9 +1,8 @@
-
 /* CSS VARIABLES */
 
 :root {
     --primary-color: #1e90ff;
-    --accent1-color: #ff6600;
+    --accent1-color: #ff6600; 
     --text-color: #333;
     --bg-color: #f4f4f4;
     --white: #ffffff;
@@ -56,8 +55,12 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent1-color); /* 
+    color: var(--accent1-color); /* now valid */
 }
+
+
+/* HEADINGS */
+
 h1 {
   position: absolute;
   top: 20px;
@@ -65,9 +68,10 @@ h1 {
   padding: 16px;
   text-align: center;
   opacity: 0.7;
-  background-color: var(--accent1-color);
+  background-color: var(--accent1-color); /* using it */
   color: #fff;
 }
+
 
 /* MAIN CONTENT */
 
@@ -137,7 +141,7 @@ main p {
 }
 
 .socialmedia a:hover {
-    color: var(--accent1-color);
+    color: var(--accent1-color); 
 }
 
 
