@@ -55,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent1-color); /* now valid */
+    color: var(--accent1-color);
 }
 
 
@@ -68,7 +68,7 @@ h1 {
   padding: 16px;
   text-align: center;
   opacity: 0.7;
-  background-color: var(--accent1-color); /* using it */
+  background-color: var(--accent1-color); 
   color: #fff;
 }
 
@@ -103,7 +103,7 @@ main p {
 
 .hero {
     position: relative;
-    height: 400px;
+    height: 200px;
     background-image: url('../images/z-splash.png');
     background-size: cover;
     background-position: center;
