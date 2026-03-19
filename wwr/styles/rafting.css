@@ -10,6 +10,14 @@
     --primary-color: #1e90ff;
     --accent-color: #ff6600;
 }
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
 
 /* Navigation */
 nav {
@@ -33,6 +41,10 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
 /* Hero Section */
@@ -83,6 +95,7 @@ p {
     padding: 5px 0;
 }
 
+
 /* Footer */
 footer {
     text-align: center;
@@ -91,6 +104,9 @@ footer {
     color: white;
 }
 
+.socialmedia a {
+    text-decoration: none;
+}
 footer .socialmedia a img {
     width: 30px;
     height: 30px;
