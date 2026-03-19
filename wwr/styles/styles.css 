@@ -1,28 +1,22 @@
-/* Reset default browser styles */
+/* Universal reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+/* CSS variables */
+:root {
+    --primary-color: #1e90ff;
+    --accent-color: #ff6600;
 }
 
-/* Header & Navigation */
-header {
-    background-color: #1e90ff; /* steel blue */
-    padding: 10px 20px;
-}
-
+/* Navigation */
 nav {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -34,11 +28,41 @@ nav a {
     color: white;
     text-decoration: none;
     margin-left: 15px;
-    font-weight: bold;
+    display: block;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.hero article {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 60%;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
 }
 
 /* Main content */
@@ -48,19 +72,14 @@ main {
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-main h1, main h2 {
-    color: #1e90ff;
+h2 {
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
-main section {
-    margin-bottom: 20px;
-}
-
-main p {
+p {
     padding: 5px 0;
 }
 
@@ -68,7 +87,12 @@ main p {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #1e90ff;
+    background-color: var(--primary-color);
     color: white;
-    margin-top: 20px;
+}
+
+footer .socialmedia a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
 }
