@@ -3,7 +3,7 @@
 
 :root {
     --primary-color: #1e90ff;
-    --accent-color: #ff6600;
+    --accent1-color: #ff6600;
     --text-color: #333;
     --bg-color: #f4f4f4;
     --white: #ffffff;
@@ -56,9 +56,18 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent-color); /* 
+    color: var(--accent1-color); /* 
 }
-
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
 
 /* MAIN CONTENT */
 
@@ -128,7 +137,7 @@ main p {
 }
 
 .socialmedia a:hover {
-    color: var(--accent-color);
+    color: var(--accent1-color);
 }
 
 
