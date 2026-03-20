@@ -81,11 +81,13 @@ nav a:hover {
     color: white;
     padding: 10px;
     border-radius: 5px;
+    overflow: hidden; /* clears the float */
 }
 
 .hero article img {
     float: right;
     width: 70px;
+    height: auto;
     margin-left: 10px;
     border-radius: 5px;
 }
@@ -149,32 +151,4 @@ footer {
 .socialmedia a:hover img {
     transform: scale(1.2);
     opacity: 0.8;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .hero article {
-        width: 80%;
-        font-size: 0.9rem;
-    }
-
-    main img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    nav a {
-        margin: 5px 10px 0 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .socialmedia a img {
-        width: 25px;
-        height: 25px;
-    }
 }
