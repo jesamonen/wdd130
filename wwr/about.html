@@ -11,7 +11,7 @@
         content="Ride the rapids and feel the adrenaline—join our unforgettable white water rafting adventure today!">
     <meta name="author" content="Jesam Onen">
 
-    <!-- Link to your CSS -->
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -22,7 +22,7 @@
             <img src="images/z-splash.png" alt="RapidXtreme logo">
 
             <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="about.html" aria-current="page">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
@@ -32,23 +32,25 @@
     <main>
 
         <!-- HERO SECTION -->
-        <div class="hero">
+        <section class="hero">
+            <img src="images/z-splash.png" alt="White water rafting adventure">
+
             <h1>RapidXtreme</h1>
 
             <article>
-                <img src="images/z-splash.png" alt="Rafting adventure">
-
                 <p>
                     RapidXtreme is your ultimate destination for high-energy white water rafting
                     adventures. Safe, thrilling, and unforgettable experiences await both beginners
                     and seasoned adventurers.
                 </p>
+
+                <img src="images/z-splash.png" alt="Rafting adventure logo">
             </article>
-        </div>
+        </section>
 
         <!-- HISTORY SECTION -->
         <section>
-            <h2>History</h2>
+            <h2>Our History</h2>
             <p>
                 RapidXtreme was founded by a group of outdoor enthusiasts who shared a passion
                 for adventure and the river. What started as a small local rafting team quickly
@@ -64,30 +66,31 @@
                 group outing, a family-friendly experience, or an extreme challenge,
                 RapidXtreme has the perfect trip for you.
             </p>
-            <!-- Extra images to meet validator requirement -->
-            <img src="images/rafting1.jpg" alt="Group rafting adventure" width="300">
-            <img src="images/rafting.jpg" alt="Thrilling rapids experience" width="300">
+
+            <div class="adventure-images">
+                <img src="images/rafting1.jpg" alt="Group rafting adventure">
+                <img src="images/rafting.jpg" alt="Thrilling rapids experience">
+            </div>
         </section>
 
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="images/facebook.jpg" alt="Facebook icon" width="30">
+        <nav class="socialmedia" aria-label="Social media links">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.jpg" alt="Facebook icon">
             </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img src="images/twitter.jpg" alt="Twitter icon" width="30">
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.jpg" alt="Twitter icon">
             </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="images/instagram.jpg" alt="Instagram icon" width="30">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.jpg" alt="Instagram icon">
             </a>
         </nav>
 
         <p>&copy; 2026 RapidXtreme. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
