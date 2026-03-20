@@ -15,6 +15,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #f9f9f9;
 }
 
 /* Layout */
@@ -43,6 +44,7 @@ nav a {
     text-decoration: none;
     margin-left: 15px;
     font-weight: bold;
+    transition: text-decoration 0.3s;
 }
 
 nav a:hover {
@@ -52,11 +54,13 @@ nav a:hover {
 /* Hero Section */
 .hero {
     position: relative;
+    margin-bottom: 20px;
 }
 
 .hero img {
     width: 100%;
     display: block;
+    border-radius: 8px;
 }
 
 .hero h1 {
@@ -65,6 +69,7 @@ nav a:hover {
     left: 20px;
     color: white;
     font-size: 2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
 .hero article {
@@ -75,17 +80,22 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .hero article img {
     float: right;
     width: 70px;
     margin-left: 10px;
+    border-radius: 5px;
 }
 
 /* Main content */
 main {
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 h2 {
@@ -95,24 +105,68 @@ h2 {
 
 p {
     margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Extra images in main content */
+main img {
+    display: inline-block;
+    margin: 10px 5px;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background-color: var(--primary-color);
     color: white;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
-/* Social media icons */
+/* Social media icons in footer */
+.socialmedia {
+    margin-bottom: 10px;
+}
+
 .socialmedia a {
-    color: white;
-    font-size: 24px;
+    display: inline-block;
     margin: 0 10px;
-    
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-.socialmedia a:hover {
-    color: var(--accent1-color);
+.socialmedia a img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.socialmedia a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .hero article {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    main img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 5px 10px 0 0;
+    }
 }
