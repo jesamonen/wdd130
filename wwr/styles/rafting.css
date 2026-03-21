@@ -80,7 +80,7 @@ nav a {
   bottom: 20px;
   left: 20px;
   width: 60%;
-  display: flex;              /* FLEXBOX USED HERE */
+  display: flex;              
   align-items: center;
   gap: 10px;
   background-color: rgba(0,0,0,0.6);
@@ -97,9 +97,9 @@ nav a {
 /* MAIN CONTENT FLEX */
 main {
   display: flex;
-  flex-direction: column;
   gap: 20px;
   padding: 10px;
+  position: relative;
 }
 
 /* Sections */
@@ -112,10 +112,10 @@ section {
 /* Footer */
 footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
   padding: 15px;
+  background-color: grey;
 }
 
 /* Social media flex */
