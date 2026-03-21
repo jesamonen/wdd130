@@ -1,4 +1,4 @@
-/* Universal reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,28 +12,24 @@
     --body-font: Arial, sans-serif;
 }
 
+/* Body */
 body {
-    position: relative;
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #f9f9f9;
 }
 
 /* Layout */
 header,
 main,
 footer {
-    max-width: 840px;
+    width: 840px;
     margin: 0 auto;
-    width: 100%;
 }
 
-/* Navigation */
+/* Nav */
 nav {
     background-color: var(--primary-color);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
+    padding: 10px;
 }
 
 nav img {
@@ -41,92 +37,69 @@ nav img {
 }
 
 nav a {
-    color: #ffffff;
-    text-decoration: none;
+    color: white;
     margin-left: 15px;
-    font-weight: bold;
+    text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
+/* HERO */
 .hero {
-    position: absolute;
-    /* REQUIRED */
-    margin-bottom: 20px;
+    position: relative;
+    /* ✅ REQUIRED */
 }
 
 .hero img {
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
-/* REQUIRED: absolute positioning */
+/* REQUIRED */
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 20px;
-    color: #ffffff;
-    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: white;
 }
 
+/* REQUIRED */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 60%;
     background-color: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
+    color: white;
     padding: 10px;
+    width: 60%;
 }
 
-/* Float image inside article */
 .hero article img {
     float: right;
-    width: 70px;
-    height: auto;
-    margin-left: 10px;
+    width: 125px;
 }
 
-/* Main content */
-main {
-    padding: 20px;
-    background-color: #ffffff;
+/* Sections */
+section {
+    margin: 16px;
 }
 
 h2 {
     color: var(--primary-color);
-    margin: 15px 0 10px;
-}
-
-p {
-    margin-bottom: 10px;
-    line-height: 1.6;
 }
 
 /* Footer */
 footer {
-    clear: both;
     text-align: center;
-    padding: 20px;
     background-color: var(--primary-color);
-    color: #ffffff;
-    margin-top: 20px;
-}
-
-/* Social media */
-.socialmedia {
-    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
-.socialmedia a img {
+.socialmedia img {
     width: 30px;
-    height: auto;
-    margin: 0 5px;
 }
