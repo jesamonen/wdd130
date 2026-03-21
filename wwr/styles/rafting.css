@@ -129,6 +129,7 @@ footer {
     color: white;
     margin-top: 20px;
     border-radius: 8px;
+    clear: both;
 }
 
 /* Social media icons in footer */
