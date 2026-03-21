@@ -19,7 +19,7 @@ body {
   color: var(--accent1-color);
 }
 
-/* Layout */
+/* Layout container */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -31,62 +31,99 @@ h1, h2 {
   color: var(--primary-color);
 }
 
-/* Spacing */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* FLEX NAVIGATION */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-/* Navigation */
+nav {
+  display: flex;
+  gap: 15px;
+}
+
 nav a {
   text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   position: relative; /* REQUIRED */
 }
 
-/* Hero Image */
+/* Hero image */
 .hero img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* Hero Title */
+/* Overlay heading */
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #ffffff;
+  color: white;
+  opacity: 0.85;
 }
 
-/* Hero Article */
+/* Overlay article */
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
+  width: 60%;
+  display: flex;              /* FLEXBOX USED HERE */
+  align-items: center;
+  gap: 10px;
   background-color: rgba(0,0,0,0.6);
-  color: #ffffff;
+  color: white;
+  padding: 10px;
 }
 
-/* Article Image */
+/* Article image */
 .hero article img {
-  float: right;
-  width: 125px;
+  width: 100px;
+  height: auto;
+}
+
+/* MAIN CONTENT FLEX */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Sections */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Footer */
 footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
 }
 
-/* Social Media */
+/* Social media flex */
+.socialmedia {
+  display: flex;
+  gap: 15px;
+}
+
 .socialmedia a {
   text-decoration: none;
 }
