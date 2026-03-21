@@ -90,11 +90,12 @@ nav a:hover {
     height: auto;
     margin-left: 10px;
     border-radius: 5px;
-    clear:both
+    position: absolute 
 }
 
 /* Main content */
 main {
+    position: relative 
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
