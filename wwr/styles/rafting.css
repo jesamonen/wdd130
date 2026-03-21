@@ -1,133 +1,106 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Variables */
 :root {
-  --primary-color: #1e90ff;
-  --accent1-color: #ff6600;
-  --body-font: Arial, sans-serif;
-  --heading-font: Georgia, serif;
+    --primary-color: #1e90ff;
+    --accent1-color: #ff6600;
+    --body-font: Arial, sans-serif;
 }
 
 /* Body */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+    font-family: var(--body-font);
+    color: var(--accent1-color);
 }
 
-/* Layout container */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+/* Layout */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
-/* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-/* FLEX NAVIGATION */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
-nav {
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-/* HERO SECTION */
+/* HERO */
 .hero {
-  position: relative; /* REQUIRED */
+    position: relative;
+    /
 }
 
-/* Hero image */
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-/* Overlay heading */
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  background-color: var(--accent1-color);
-  color: white;
-  opacity: 0.85;
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    /* white text – make sure there is enough contrast with the background-color */
 }
 
-/* Overlay article */
 .hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 60%;
-  display: flex;              
-  align-items: center;
-  gap: 10px;
-  background-color: rgba(0,0,0,0.6);
-  color: white;
-  padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    width: 60%;
 }
 
-/* Article image */
 .hero article img {
-  width: 100px;
-  height: auto;
-}
-
-/* MAIN CONTENT FLEX */
-main {
-  display: flex;
-  gap: 20px;
-  padding: 10px;
-  position: relative;
+    float: right;
+    width: 125px;
 }
 
 /* Sections */
 section {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    margin: 16px;
+}
+
+h2 {
+    color: var(--primary-color);
 }
 
 /* Footer */
 footer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px;
-  background-color: grey;
-}
-
-/* Social media flex */
-.socialmedia {
-  display: flex;
-  gap: 15px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    clear: both;
 }
 
 .socialmedia a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .socialmedia img {
-  width: 30px;
+    width: 30px;
 }
