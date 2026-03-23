@@ -52,6 +52,7 @@ header {
     grid-auto-flow: column;
     align-items: center;
     background-color: blueviolet;
+    position: relative;
 }
 
 a {
@@ -68,6 +69,8 @@ nav {
     justify-content: center;
     background-color: black;
     align-items: center;
+    width: 300px;
+    position: absolute;
 }
 
 img .hero img {
