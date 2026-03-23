@@ -55,6 +55,13 @@ header {
     position: relative;
 }
 
+header,
+img,
+nav {
+    margin: 2px;
+
+}
+
 a {
     margin: 3px;
     padding: 5px;
@@ -66,7 +73,8 @@ a {
 
 nav {
     display: flex;
-
+    justify-content: center;
+    background-color: black;
     align-items: center;
 
     position: absolute;
