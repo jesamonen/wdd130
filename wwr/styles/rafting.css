@@ -56,10 +56,17 @@ header {
 
 a {
     margin: 3px;
-    padding: 20px;
+    padding: 50px;
     background-color: gray;
     color: white;
+    text-decoration: none;
 
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
 }
 
 img .hero img {
