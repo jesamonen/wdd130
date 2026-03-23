@@ -58,7 +58,7 @@ header {
 header,
 img,
 nav {
-    margin: 2px;
+    justify-content: center;
 
 }
 
