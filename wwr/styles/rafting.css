@@ -46,7 +46,23 @@ article {
 
 }
 
-.hero img {
+header {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+a {
+    margin: 3px;
+    padding: 5px;
+    background-color: gray;
+    color: white;
+
+}
+
+img .hero img {
     display: block;
     width: 100%;
     height: auto;
