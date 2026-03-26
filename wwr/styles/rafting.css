@@ -65,6 +65,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: black;
+    padding: 20px;
 }
 
 nav a {
