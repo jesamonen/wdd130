@@ -36,7 +36,12 @@ h2 {
     color: var(--primary-color);
 }
 
-/* SPACING */
+img{
+   width:70px;
+   height: 70px;
+
+}
+
 nav,
 p,
 section,
