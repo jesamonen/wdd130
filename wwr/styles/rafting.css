@@ -1,39 +1,42 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Variables */
+/* VARIABLES */
 :root {
     --primary-color: #1e90ff;
     --accent1-color: #ff6600;
     --body-font: Arial, sans-serif;
 }
 
-/* Body */
+/* BODY LAYOUT */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    max-width: 100vw;
-    max-height: 100vh;
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
 }
 
-/* Layout */
+/* GENERAL LAYOUT */
 header,
 main,
 footer {
-    width: 840px;
-    margin: 0 auto;
+    width: 100%;
 }
 
+/* HEADINGS */
 h1,
 h2 {
-    font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* SPACING */
 nav,
 p,
 section,
@@ -42,65 +45,59 @@ article {
     padding: 8px;
 }
 
-/* HERO */
-.hero {
-    position: relative;
-
-}
-
+/* ================= HEADER ================= */
 header {
-    display: grid;
-    grid-auto-columns: auto;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: blueviolet;
-    position: relative;
-    max-width: 100vw;
+    padding: 10px 20px;
 }
 
-header,
-img,
-nav {
-    justify-content: center;
-
-}
-
-a {
-    margin: 3px;
-    padding: 5px;
-    background-color: gray;
-    color: white;
-    text-decoration: none;
-
-}
-
+/* ================= NAVBAR ================= */
 nav {
     display: flex;
     justify-content: center;
-    background-color: black;
     align-items: center;
-
-    position: absolute;
+    background-color: black;
 }
 
-img .hero img {
+nav a {
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+}
+
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+}
+
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+/* HERO TITLE */
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: rgba(255, 102, 0, 0.8);
     color: #fff;
-    /* white text – make sure there is enough contrast with the background-color */
 }
 
+/* HERO TEXT BOX */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -114,9 +111,15 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 10px;
 }
 
-/* Sections */
+/* ================= MAIN ================= */
+main {
+    padding: 20px;
+}
+
+/* ================= SECTIONS ================= */
 section {
     margin: 16px;
 }
@@ -125,17 +128,26 @@ h2 {
     color: var(--primary-color);
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 footer {
-    text-align: center;
     background-color: var(--primary-color);
     color: white;
-    padding: 10px;
-    clear: both;
-    max-width: 100vw;
-    diplay: flex;
-    justify-content: space-around;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+/* FOOTER TEXT */
+footer p {
+    margin: 0;
+}
+
+/* SOCIAL MEDIA */
+.socialmedia {
+    display: flex;
+    gap: 10px;
 }
 
 .socialmedia a {
@@ -144,4 +156,10 @@ footer {
 
 .socialmedia img {
     width: 30px;
+}
+
+/* ================= OPTIONAL CENTERED CONTENT ================= */
+main {
+    max-width: 900px;
+    margin: 0 auto;
 }
