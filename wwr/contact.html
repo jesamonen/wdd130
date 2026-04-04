@@ -30,24 +30,97 @@
 
     <!-- MAIN -->
     <main>
-        <section class="company profile">
-            <div class="company"></div>
 
-        </section>
-        <section class="contact">
-            <div class="map"></div>
-            <div class="form"></div>
+    <!-- CONTACT INFO -->
+    <section class="contact-info">
+        <h1>Contact RapidXtreme</h1>
+        <p>123 Main River Street, Kolob, California</p>
+        <p>📞 +234 7039 8428 79</p>
+        <p>📧 info@rapidxtrme.com</p>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <section class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=California&output=embed"
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- EMPLOYEES -->
+    <section class="employees">
+        <h2>We Are Here to Serve You</h2>
+
+        <div class="employee-gallery">
+            <figure>
+                <img src="images/employee1.jpg" alt="Guide">
+                <figcaption>John Doe - Lead Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee2.jpg" alt="Manager">
+                <figcaption>Jane Smith - Operations Manager</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee3.jpg" alt="Support">
+                <figcaption>Mike Lee - Customer Support</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+
+        <form action="#" method="post">
+
+            <!-- NAME -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- EMAIL -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- RADIO BUTTONS -->
+            <p>Message Purpose:</p>
+
+            <label>
+                <input type="radio" name="purpose" value="general" required>
+                General Inquiry
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="reservation">
+                Reservation Question
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="suggestion">
+                Website Suggestion
+            </label>
+
+            <!-- MESSAGE -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <!-- CHECKBOX -->
+            <label>
+                <input type="checkbox" name="subscribe">
+                Please subscribe me to the monthly newsletter
+            </label>
+
+            <!-- SUBMIT -->
+            <button type="submit">Get in Touch!</button>
+
+        </form>
+    </section>
+
+</main>
 
 
-        </section>
-        <section class="employee">
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
-        </section>
-
-
-    </main>
+   
 
     <!-- FOOTER -->
     <footer>
